@@ -5,13 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "timebomb"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Make your cucumber step definitions time aware}
+    gem.description = %Q{Make your cucumber step definitions time aware}
     gem.email = "drew@drewolson.org"
     gem.homepage = "http://github.com/drewolson/timebomb"
     gem.authors = ["Drew Olson"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "timecop"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

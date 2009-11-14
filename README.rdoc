@@ -1,6 +1,48 @@
 = timebomb
 
-Description goes here.
+If you're like me, you've found yourself with a cucumber
+step definition like this:
+
+  Given /^I recieved an invitation$/ do
+    ...
+  end
+
+And you want to write a step definition like this:
+
+  Given /^I recieved an invitation 2 days ago$/ do
+    ...
+  end
+
+Well, timebomb to the rescue. It lets you append
+time constraints to your cucumber step defintions by
+mixing and matching:
+
+- seconds, minutes, hours, days, weeks, months, years
+- ago, from now
+
+So with the following step definition:
+
+  Given /^I recieved an invitation$/ do
+    ...
+  end
+
+I can write any of the following:
+
+  Given I received an invitation 1 day from now
+  Given I received an invitation 2 weeks ago
+  Given I received an invitation 3 months from now
+  Given I received an invitation 15 years ago
+
+Timebomb to the rescue, BOOM!
+
+== Installing
+
+First install Timebomb
+
+  sudo gem install timebomb
+
+Now, just require it in your cucumber env.rb file. 
+BOOM goes the dynamite.
 
 == Note on Patches/Pull Requests
  
