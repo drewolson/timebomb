@@ -12,6 +12,7 @@ begin
     gem.authors = ["Drew Olson"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_dependency "timecop"
+    gem.add_dependency "activesupport"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
