@@ -37,6 +37,11 @@ Timebomb to the rescue, BOOM!
 
 == Installing
 
+Make sure you have gemcutter as your default source:
+
+  sudo gem install gemcutter
+  gem tumble
+
 First install Timebomb
 
   sudo gem install timebomb
